@@ -6,11 +6,12 @@
     <parent>
         <groupId>top.wuhunyu</groupId>
         <artifactId>starter</artifactId>
-        <version>1.0</version>
+        <version>0.9</version>
     </parent>
 
     <groupId>top.wuhunyu.oss</groupId>
     <artifactId>oss-spring-boot-starter</artifactId>
+    <version>${oss.version}</version>
     <packaging>jar</packaging>
 
     <properties>
@@ -32,7 +33,7 @@
         <dependency>
             <groupId>top.wuhunyu.oss</groupId>
             <artifactId>oss-api</artifactId>
-            <version>1.0</version>
+            <version>${oss.version}</version>
         </dependency>
         <dependency>
             <groupId>cn.hutool</groupId>
