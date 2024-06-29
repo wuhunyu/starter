@@ -6,7 +6,7 @@
     <parent>
         <groupId>top.wuhunyu</groupId>
         <artifactId>starter</artifactId>
-        <version>0.9</version>
+        <version>0.9.0</version>
     </parent>
 
     <groupId>top.wuhunyu.oss</groupId>
