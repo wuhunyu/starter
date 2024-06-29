@@ -20,6 +20,24 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
         <oss.version>0.9</oss.version>
+
+        <maven-compiler.version>3.8.1</maven-compiler.version>
     </properties>
+
+    <build>
+        <finalName>${project.name}</finalName>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>${maven-compiler.version}</version>
+                <configuration>
+                    <source>${maven.compiler.source}</source>
+                    <target>${maven.compiler.target}</target>
+                    <encoding>${project.build.sourceEncoding}</encoding>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 
 </project>

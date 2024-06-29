@@ -25,8 +25,6 @@
         <logback.version>1.4.14</logback.version>
 
         <spring-boot.version>3.3.0</spring-boot.version>
-
-        <maven-shade-plugin.version>3.6.0</maven-shade-plugin.version>
     </properties>
 
     <dependencies>
@@ -67,31 +65,5 @@
             <version>${spring-boot.version}</version>
         </dependency>
     </dependencies>
-
-    <build>
-        <finalName>${project.name}</finalName>
-        <plugins>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-shade-plugin</artifactId>
-                <version>${maven-shade-plugin.version}</version>
-                <executions>
-                    <execution>
-                        <phase>package</phase>
-                        <goals>
-                            <goal>shade</goal>
-                        </goals>
-                        <configuration>
-                            <artifactSet>
-                                <includes>
-                                    <include>top.wuhunyu.oss:oss-api</include>
-                                </includes>
-                            </artifactSet>
-                        </configuration>
-                    </execution>
-                </executions>
-            </plugin>
-        </plugins>
-    </build>
 
 </project>
